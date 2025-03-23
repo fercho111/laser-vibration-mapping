@@ -1,7 +1,7 @@
 # Laser Reflection Pattern from a Vibrating Circular Membrane
 
 ## Physical System
-Consider a circular membrane of radius \( R \) vibrating under tension. A laser reflects off a point \( (r_0, \theta_0) \) on the membrane and projects onto a screen at distance \( L \). We derive the pattern traced by the laser during vibration.
+Consider a circular membrane of radius $$R$$ vibrating under tension. A laser reflects off a point \( (r_0, \theta_0) \) on the membrane and projects onto a screen at distance \( L \). We derive the pattern traced by the laser during vibration.
 
 ## Governance Equation
 The transverse displacement \( z(r,\theta,t) \) satisfies the wave equation in polar coordinates:
