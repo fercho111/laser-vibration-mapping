@@ -99,14 +99,14 @@ $$
 
 We introduce the following constants to group the constant terms:
 
-\[
+$$
 B_{mn}^x = \frac{\alpha_{mn}}{R} J_m'\!\left(\frac{\alpha_{mn}r_0}{R}\right) \cos\theta_0,\quad
 C_{mn}^x = \frac{m}{r_0} J_m\!\left(\frac{\alpha_{mn}r_0}{R}\right) \sin\theta_0,
-\]
-\[
+$$
+$$
 B_{mn}^y = \frac{\alpha_{mn}}{R} J_m'\!\left(\frac{\alpha_{mn}r_0}{R}\right) \sin\theta_0,\quad
 C_{mn}^y = \frac{m}{r_0} J_m\!\left(\frac{\alpha_{mn}r_0}{R}\right) \cos\theta_0.
-\]
+$$
 
 With these definitions, the equations can be rewritten as:
 
@@ -119,22 +119,22 @@ $$
 
 We define the following constants that group all time-independent terms:
 
-\[
+$$
 D_{mn}^x = A_{mn} \bigl[ B_{mn}^x \cos(m\theta_0 + \phi_{mn}) + C_{mn}^x \sin(m\theta_0 + \phi_{mn}) \bigr],
-\]
-\[
+$$
+$$
 D_{mn}^y = A_{mn} \bigl[ B_{mn}^y \cos(m\theta_0 + \phi_{mn}) - C_{mn}^y \sin(m\theta_0 + \phi_{mn}) \bigr].
-\]
+$$
 
 Substituting these constants into the original equations:
 
-\[
+$$
 x_{\text{screen}}(t) = -2L \sum_{m,n} D_{mn}^x \cos(\omega_{mn}t + \psi_{mn}),
-\]
+$$
 
-\[
+$$
 y_{\text{screen}}(t) = -2L \sum_{m,n} D_{mn}^y \cos(\omega_{mn}t + \psi_{mn}).
-\]
+$$
 
 These equations show that the trajectory of the laser point on the screen is a combination of oscillations in \( x \) and \( y \), where the coefficients \( D_{mn}^x \) and \( D_{mn}^y \) encapsulate all spatial and modal dependencies, leaving the temporal evolution governed solely by the terms \( \cos(\omega_{mn}t + \psi_{mn}) \).
 
