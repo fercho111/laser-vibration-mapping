@@ -1,10 +1,10 @@
 # Laser Reflection Pattern from a Vibrating Circular Membrane
 
 ## Physical System
-Consider a circular membrane of radius $$R$$ vibrating under tension. A laser reflects off a point $$ (r_0, \theta_0) $$ on the membrane and projects onto a screen at distance $$ L $$. We derive the pattern traced by the laser during vibration.
+Consider a circular membrane of radius $$R$$ vibrating under tension. A laser reflects off a point $$(r_0, \theta_0)$$ on the membrane and projects onto a screen at distance $$L$$. We derive the pattern traced by the laser during vibration.
 
 ## Governance Equation
-The transverse displacement $$ z(r,\theta,t) $$ satisfies the wave equation in polar coordinates:
+The transverse displacement $$z(r,\theta,t)$$ satisfies the wave equation in polar coordinates:
 $$
 \nabla^2 z = \frac{1}{v^2} \frac{\partial^2 z}{\partial t^2}
 $$
@@ -20,20 +20,20 @@ z(r,\theta,t) = \sum_{m=0}^\infty \sum_{n=1}^\infty A_{mn} J_m\left(\frac{\alpha
 $$
 
 Where:
-- $$ J_m $$: Bessel function of first kind, order $$ m $$
-- $$ \alpha_{mn} $$: $$ n $$-th positive root of $$ J_m $$
-- $$ \omega_{mn} = c\frac{\alpha_{mn}}{R} $$: Mode frequency
-- $$ A_{mn} $$: Mode amplitude
-- $$ \phi_{mn}, \psi_{mn} $$: Phase constants
+- $$J_m$$: Bessel function of first kind, order $$m$$
+- $$\alpha_{mn}$$: $$n$$-th positive root of $$J_m$$
+- $$\omega_{mn} = c\frac{\alpha_{mn}}{R}$$: Mode frequency
+- $$A_{mn}$$: Mode amplitude
+- $$\phi_{mn}, \psi_{mn}$$: Phase constants
 
 ## Reflection Geometry
-The surface normal vector $$ \mathbf{n} $$ determines reflection direction. For small displacements ($$ |\nabla z| \ll 1 $$):
+The surface normal vector $$\mathbf{n}$$ determines reflection direction. For small displacements ($$|\nabla z| \ll 1$$):
 $$
 \mathbf{n} \approx \left(-\frac{\partial z}{\partial x}, -\frac{\partial z}{\partial y}, 1\right)
 $$
 
 ### Incident Laser
-Assume vertical incidence (along $$ \hat{z} $$):
+Assume vertical incidence (along $$\hat{z}$$):
 $$
 \mathbf{v}_i = (0,0,1)
 $$
@@ -45,13 +45,13 @@ $$
 $$
 
 ## Screen Projection
-At screen distance $$ L $$, coordinates become:
+At screen distance $$L$$, coordinates become:
 $$
 x_{\text{screen}} = -2L \frac{\partial z}{\partial x}\bigg|_{\substack{r=r_0\\ \theta=\theta_0}},\quad y_{\text{screen}} = -2L \frac{\partial z}{\partial y}\bigg|_{\substack{r=r_0\\ \theta=\theta_0}}
 $$
 
 ## Gradient Calculation
-We need $$ \partial z/\partial x $$ and $$ \partial z/\partial y $$ at $$ (r_0, \theta_0) $$.
+We need $$\partial z/\partial x$$ and $$\partial z/\partial y$$ at $$(r_0, \theta_0)$$.
 
 ### Polar Gradient Components
 First compute polar derivatives:
@@ -136,19 +136,19 @@ $$
 y_{\text{screen}}(t) = -2L \sum_{m,n} D_{mn}^y \cos(\omega_{mn}t + \psi_{mn}).
 $$
 
-These equations show that the trajectory of the laser point on the screen is a combination of oscillations in $$ x $$ and $$ y $$, where the coefficients $$ D_{mn}^x $$ and $$ D_{mn}^y $$ encapsulate all spatial and modal dependencies, leaving the temporal evolution governed solely by the terms $$ \cos(\omega_{mn}t + \psi_{mn}) $$.
+These equations show that the trajectory of the laser point on the screen is a combination of oscillations in $$x$$ and $$y$$, where the coefficients $$D_{mn}^x$$ and $$D_{mn}^y$$ encapsulate all spatial and modal dependencies, leaving the temporal evolution governed solely by the terms $$\cos(\omega_{mn}t + \psi_{mn})$$.
 
 ## Key Observations
-1. **Mode Coupling**: Each mode contributes terms proportional to $$ \omega_{mn}t + \psi_{mn} $$
-2. **Time Dependence**: $$ \cos(\omega_{mn}t + \psi_{mn}) $$ creates time modulation
+1. **Mode Coupling**: Each mode contributes terms proportional to $$\omega_{mn}t + \psi_{mn}$$
+2. **Time Dependence**: $$\cos(\omega_{mn}t + \psi_{mn})$$ creates time modulation
 3. **Frequency Mixing**: For multiple modes, cross terms generate:
    $$
    \cos(\omega_{pq}t)\cos(\omega_{rs}t) \propto \cos[(\omega_{pq} \pm \omega_{rs})t]
    $$
-4. **Lissajous Figures**: When $$ \omega_{pq}/\omega_{rs} $$ is rational, curves close; irrational ratios produce non-repeating patterns
+4. **Lissajous Figures**: When $$\omega_{pq}/\omega_{rs}$$ is rational, curves close; irrational ratios produce non-repeating patterns
 
 ## Special Case: Single Mode
-For a single $$ (m,n) $$ mode:
+For a single $$(m,n)$$ mode:
 $$
 \begin{cases}
 x_{\text{screen}}(t) = C_x \cos(\omega t + \psi) \\
